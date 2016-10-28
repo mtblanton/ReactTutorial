@@ -1,11 +1,11 @@
 import React from 'react'
-import {styles} from '../styles'
+import {Styles} from '../styles'
 import {Link} from 'react-router'
 
 export default React.createClass({
   render: function() {
     return (
-      <div className='jumbotron col-sm-12 text-center' style={styles.transparentBg}>
+      <div className='jumbotron col-sm-12 text-center' style={Styles.transparentBg}>
           <h1>Github Battle</h1>
           <p className='lead'>What even is a jQuery?</p>
           <Link to='/playerOne'>

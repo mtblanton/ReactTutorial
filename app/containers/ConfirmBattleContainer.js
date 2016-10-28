@@ -9,7 +9,7 @@ export default React.createClass({
   getInitialState: function() {
     return {
       isLoading: true,
-      playerInfo: []
+      playersInfo: []
     }
   },
   componentDidMount: function() {
@@ -22,10 +22,19 @@ export default React.createClass({
       })
     }.bind(this));
   },
+  handleInitateBattle: function() {
+    this.context.router.push({
+      pathname: '/results',
+      state: {
+        playersInfo: this.state.playersInfo
+      }
+    });
+  },
   render: function() {
     return (
         <ConfirmBattle
           isLoading={this.state.isLoading}
+          onInitiateBattle={this.handleInitateBattle}
           playersInfo={this.state.playersInfo} />
     )
   }

@@ -1,7 +1,10 @@
-var styles = {
+var Styles = {
     transparentBg: {
         background: 'transparent'
+    },
+    space: {
+      marginTop: '25px'
     }
 };
 
-export {styles};
+export {Styles};
