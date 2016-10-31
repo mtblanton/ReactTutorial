@@ -1,5 +1,5 @@
 import React from 'react'
-import {ConfirmBattle} from '../components/ConfirmBattle'
+import ConfirmBattle from '../components/ConfirmBattle'
 import {helpers as githubHelpers} from '../utils/githubHelpers'
 
 export default React.createClass({

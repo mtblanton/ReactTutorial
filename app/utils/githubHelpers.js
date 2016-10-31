@@ -26,7 +26,7 @@ function getPlayersData(player){
         followers: player.followers,
         totalStars: totalStars
       }
-    });
+   });
 }
 
 function calculateScores(players) {
